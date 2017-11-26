@@ -36,8 +36,6 @@ set :linked_dir, fetch(:linked_dirs, []).push(
   'log'
 )
 
-set :git_shallow_clone, 1
-
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
