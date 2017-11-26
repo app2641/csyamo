@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: csyamo_production
-  username: csyamo
+  username: <%= ENV['CSYAMO_DATABASE_USER'] %>
   password: <%= ENV['CSYAMO_DATABASE_PASSWORD'] %>
