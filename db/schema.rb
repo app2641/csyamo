@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171126105028) do
+ActiveRecord::Schema.define(version: 20180101135753) do
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "user_name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "encrypted_access_token", null: false
     t.index ["user_name"], name: "index_users_on_user_name", unique: true
   end
 
